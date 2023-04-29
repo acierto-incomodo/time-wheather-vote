@@ -1,0 +1,20 @@
+name: VotarTiempoPlugin
+main: com.creper1125463.votartiempoplugin.votartiempoplugin
+version: 1.0
+api-version: 1.16
+description: Plugin para votar el tiempo y el momento del día en Minecraft
+commands:
+  votartiempo:
+    description: Inicia una votación para cambiar el tiempo y el momento del día
+    usage: /votartiempo
+    aliases: [vt]
+    permission: votartiempo.usar
+    permission-message: No tienes permiso para usar este comando.
+    cooldown: 60
+    cooldown-message: Debes esperar %cooldown% segundos para volver a usar este comando.
+    min-players: 2
+    min-seconds: 30
+    max-seconds: 300
+    votes-needed: 3
+    success-message: El tiempo y el momento del día han sido cambiados.
+    fail-message: No se ha alcanzado la cantidad de votos necesaria para cambiar el tiempo y el momento del día.
